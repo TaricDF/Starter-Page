@@ -1,0 +1,44 @@
+{
+  "characters": [
+    {
+      "id": 0,
+      "name": "Asta",
+      "age": 18,
+      "series": "Black Clover",
+      "powers": "Anti-Magic",
+      "picture": "/assets/asta.webp"
+    },
+    {
+      "id": 1,
+      "name": "Natsu",
+      "age": 400,
+      "series": "Fairy Tail",
+      "powers": "Fire Dragon Magic",
+      "picture": "/assets/natsu.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Deku",
+      "age": 16,
+      "series": "My Hero Academia",
+      "powers": "All for One",
+      "picture": "/assets/Midoriya.webp"
+    },
+    {
+      "id": 3,
+      "name": "Killua",
+      "age": 12,
+      "series": "Hunter X Hunter",
+      "powers": "Nen",
+      "picture": "/assets/killua.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Zenitsu",
+      "age": 16,
+      "series": "Demon Slayer",
+      "powers": "Thunder Breathing",
+      "picture": "/assets/zenitsu.jpg"
+    }
+  ]
+}
