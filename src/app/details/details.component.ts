@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterService } from '../character.service';
-import { Info } from '../info';
+import { Character } from '../character';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -46,7 +46,7 @@ export class DetailsComponent {
 
   characterService = inject(CharacterService);
 
-  characterInfo: Info | undefined;
+  characterInfo: Character | undefined;
 
   applyForm = new FormGroup({
     firstName: new FormControl(''),

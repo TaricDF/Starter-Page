@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CharacterInfoComponent } from '../character-info/character-info.component';
-import { Info } from '../info';
+import { Character } from '../character';
 import { CharacterService } from '../character.service';
 
 @Component({
@@ -23,12 +23,12 @@ import { CharacterService } from '../character.service';
 })
 export class CharacterComponent {
 
-  characterInfoList: Info[] = [];
+  characterInfoList: Character[] = [];
 
   characterService: CharacterService = inject(CharacterService);
 
   constructor() {
-    this.characterService.getAllCharacters().then((characterInfoList: Info[]) => {
+    this.characterService.getAllCharacters().then((characterInfoList: Character[]) => {
       this.characterInfoList = characterInfoList;
     });
   }

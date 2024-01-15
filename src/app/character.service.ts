@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Info } from './info';
+import { Character } from './character';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +8,12 @@ export class CharacterService {
   url = 'http://localhost:3000/characters';
   constructor() { }
 
-  async getAllCharacters(): Promise<Info[]> {
+  async getAllCharacters(): Promise<Character[]> {
     const data = await fetch(this.url);
     return await data.json() ?? [];
   }
 
-  async getCharacterById(id: Number): Promise<Info | undefined> {
+  async getCharacterById(id: Number): Promise<Character | undefined> {
     const data = await fetch(`${this.url}/${id}`);
     return await data.json() ?? {};
   }

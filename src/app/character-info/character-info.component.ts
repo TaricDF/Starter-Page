@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Info } from '../info';
+import { Character } from '../character';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -17,5 +17,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './character-info.component.css'
 })
 export class CharacterInfoComponent {
-  @Input() characterInfo!:Info;
+  @Input() characterInfo!:Character;
 }

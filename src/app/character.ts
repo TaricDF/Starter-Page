@@ -1,4 +1,4 @@
-export interface Info {
+export interface Character {
     id: number,
     name: string,
     series: string,
